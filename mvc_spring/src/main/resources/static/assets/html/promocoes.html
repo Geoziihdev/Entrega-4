@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Promoções</title>
+    <link rel="stylesheet" href="../css/promocoes.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Resultado da Busca</h1>
+
+    <div th:if="${not #strings.isEmpty(keyword)}">
+        <h2 th:text="'Promoções encontradas com a palavra-chave: ' + ${keyword}"></h2>
+
+        <!-- Exiba as promoções encontradas (substitua isso por seu código real) -->
+        <div class="promocao">
+            <img src="../imagens/pelourinho-salvador-bahia.png" alt="Promoção 1">
+            <p>Salvador: Descrição da Promoção 1.</p>
+            <button class="alerta" onclick="submeterFormularioDeAlerta()">Receber Alertas</button>
+        </div>
+
+        <div class="promocao">
+            <img src="../imagens/porto-de-galinhas.jpg" alt="Promoção 2">
+            <p>Porto de galinhas 2: Descrição da Promoção 2.</p>
+            <button class="alerta" onclick="submeterFormularioDeAlerta()">Receber Alertas</button>
+        </div>
+    </div>
+
+    <!-- Formulário para assinar alertas por e-mail -->
+    <form action="receberAlertas" method="post" id="alertaForm" style="display: none;">
+        <input type="hidden" name="email" id="email">
+    </form>
+</div>
+
+
+
+
+<!-- JavaScript para submeter o formulário de alerta quando o botão é clicado -->
+<script th:inline="javascript">
+    function submeterFormularioDeAlerta() {
+        var email = prompt("Insira seu e-mail para receber alertas de promoções:");
+        if (email) {
+            document.getElementById("email").value = email;
+            document.getElementById("alertaForm").submit();
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Destinos de Voos</title>
+<link rel="stylesheet" href="../css/destino.css" />
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  
+
+    <h1>Aeroaymo</h1><br><br><br><br>
+
+    <body>
+		
+    <div class="container">
+        <h2>Buscar Destinos de Voos</h2>
+        <form action="processarBuscaDestino.jsp" method="get">
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <button type="submit">Buscar Destinos</button>
+        </form>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

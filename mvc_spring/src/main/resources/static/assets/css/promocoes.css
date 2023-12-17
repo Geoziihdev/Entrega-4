@@ -1,0 +1,62 @@
+/* Cores */
+:root {
+    --cor-azul: #3498db;
+    --cor-amarelo: #f39c12;
+    --cor-branco: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../imagens/Gramado.jpg') center center fixed; /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    opacity: 0.9; /* Ajuste a opacidade conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Conteúdo centralizado */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo opaca para o container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--cor-branco);
+    position: relative;
+}
+
+h1, h2 {
+    color: var(--cor-amarelo);
+       background-color: #3498db
+}
+
+.promocao {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo opaca para a promoção */
+    color: var(--cor-azul);
+    padding: 40px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.promocao button {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-azul);
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.promocao button:hover {
+    background-color: rgb(255, 128, 0);
+    color: var(--cor-azul);
+}
+
+/* Restante do seu estilo existente aqui */
+/* ... */

@@ -1,0 +1,203 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+
+
+        /* Seção Azul */
+        .section-blue {
+            background-color: #3498db;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Seção Amarela */
+        .section-yellow {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Seção Verde */
+        .section-green {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Seção Vermelha */
+        .section-red {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Seção Preta */
+        .section-black {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+    }
+ 
+ 
+ 
+ 
+
+/* Adicione a imagem de fundo com opacidade */
+body::before {
+    content: "";
+    background-image: url('../imagens/pelourinho-salvador-bahia.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    z-index: -1; /* Certifica-se de que a imagem está atrás do conteúdo */
+}
+
+/* Restante do seu estilo existente aqui */
+/* ... */
+
+
+
+
+
+
+
+
+
+/* Adicione estas regras ao seu arquivo CSS */
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #000; /* Cor de fundo preta */
+  color: #fff; /* Cor do texto branca */
+  padding: 20px 0; /* Adicione algum preenchimento para melhorar o espaçamento */
+}
+
+/* Estilo para as listas dentro do rodapé */
+footer ul {
+  list-style: none; /* Remova os marcadores de lista */
+  padding: 0;
+}
+
+/* Estilo para os links no rodapé */
+footer a {
+  color: #fff; /* Cor dos links branca */
+}
+
+/* Estilo para os links quando estão em hover */
+footer a:hover {
+  text-decoration: underline; /* Adicione um sublinhado ao passar o mouse */
+}
+
+
+
+/* Adicione estas regras ao seu arquivo CSS */
+
+/* Estilo para o formulário de pesquisa */
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #3498db; /* Cor azul quando o campo está focado */
+}
+
+button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9; /* Azul mais escuro quando hover */
+}
+
+/* Estilo para os links de login/cadastro */
+.link-login-cadastro {
+    color: #3498db;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.link-login-cadastro:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Adicione estas regras ao seu arquivo CSS */
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+       background-color: rgb(255, 128, 0)
+}
+
+/* Estilo para os links na barra de navegação */
+.navbar-nav .nav-link {
+    color: #fff; /* Cor dos links brancos */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e0a800; /* Amarelo mais escuro quando hover */
+}
+
+/* Estilo para o formulário de pesquisa na barra de navegação */
+#search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mover o formulário para a direita */
+}
+
+#search {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* Cor de fundo branca */
+}
+
+button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #eee; /* Cor de fundo mais clara quando hover */
+}
+
+/* Estilo para os links de login/cadastro na barra de navegação */
+.link-login-cadastro {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.link-login-cadastro:hover {
+    text-decoration: underline;
+}

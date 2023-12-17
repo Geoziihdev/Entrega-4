@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="../css/contato.css" />
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    
+<body>
+	
+	
+    <div class="container">
+        <h1>Entre em Contato Conosco</h1>
+        <form action="processarContato.jsp" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone">
+            <br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+            <a href="tel:+123456789">Telefone: (12) 3456-789</a>
+            <a href="mailto:contato@exemplo.com">Email: contato@exemplo.com</a>
+            <a href="https://chat.exemplo.com" class="chat-button">Chat</a>
+        </div>
+    </div>
+   
+    
+    
+</body>
+</html>
+
+		
+		
+	

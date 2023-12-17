@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Cadastro</title>
+    <link rel="stylesheet" href="/src/main/resources/templates/css/cadastro.css">
+</head>
+
+<body class="body-branco">
+    <h2>Detalhes do Cadastro</h2>
+
+    <!-- Loop pelos cadastros -->
+    <div th:each="cadastro : ${cadastros}">
+        <p th:text="${cadastro.nome}"></p>
+        <p th:text="${cadastro.telefone}"></p>
+        <p th:text="${cadastro.endereco}"></p>
+
+        <!-- Loop pelos clientes do cadastro -->
+        <ul>
+            <li th:each="cliente : ${cadastro.clientes}">
+                <span th:text="${cliente.nome}"></span>
+                <span th:text="${cliente.email}"></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Adicione links ou botões para outras operações, se necessário -->
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="/src/main/resources/templates/css/cadastro.css">
+</head>
+
+<body>
+    <h2>Formulário de Cadastro</h2>
+
+    <form th:action="@{/cadastro/cadastrar}" method="post" th:object="${novoCadastro}">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" th:field="*{nome}" required>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" th:field="*{telefone}" required>
+        <br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" th:field="*{endereco}" required>
+        <br>
+        <!-- Adicione campos adicionais conforme necessário -->
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+</html>
